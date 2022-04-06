@@ -10,3 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Enter a store name below"
+input = gets.chomp
+
+Store.find_or_create_by!(name: input)
